@@ -13,7 +13,7 @@ Android 3.0引入了加载器, 支持在Activity和Fragment中异步加载数据
 
 ### API 摘要
 |		类/接口		|      说明       |  
-|		-----   	|          | 
+|		-----   	|      -----     | 
 | [LoaderManager](https://developer.android.com/reference/android/app/LoaderManager.html?hl=zh-cn)        | 与 Activity 和 Fragment 相关联的的抽象类，用于管理一个或多个 Loader 实例。在 API 层，Activity 与 Fragment 的生命周期函数中已经实现了 LoaderManager 的初始化、销毁等相关工作，因此我们无需关注生命周期的改变对数据加载的影响，因为系统为自动取消数据的加载操作。</br> </br>每个 Activity 和 Fragment 中只有一个 LoaderManager，但一个 LoaderManager 可以有多个加载器。       |  
 | [LoaderManager.LoaderCallbacks](https://developer.android.com/reference/android/app/LoaderManager.LoaderCallbacks.html?hl=zh-cn)        | 回调接口，用于客户端与 LoaderManager 进行交互。<br> <br> 例如，使用 onCreateLoader() 回调方法创建新的加载器，使用 onLoadFinished() 回调方法获取加载器加载的数据。     | 
 | [Loader](https://developer.android.com/reference/android/content/Loader.html?hl=zh-cn)        | 执行异步数据加载的抽象类。     |  
