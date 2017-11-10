@@ -52,8 +52,13 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     @Override
     public Loader<PageBean> onCreateLoader(int id, Bundle args) {
+        switch (id) {
+            case TASKS_GET_PAGE_CONTENT:
+                return mLoader;
+            // 其他 Loader 的 ID
+        }
         mSwipeRefreshLayout.setRefreshing(true);
-        return mLoader;
+        return null;
     }
 
     @Override
