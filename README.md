@@ -4,8 +4,9 @@
 
 ## 简介
 
-### Loader
-Android 3.0引入了加载器, 支持在Activity和Fragment中异步加载数据。加载器有以下特征：		
+### Loader是什么？
+Android 3.0引入了加载器, 用于在 Activity 和 Fragment 中异步加载数据。加载器有以下特征：
+
 - 可用于每个Activity和Fragment	
 - 支持异步加载数据	
 - 监控数据源并在内容发生变化时传递新结果		
@@ -25,3 +26,9 @@ Android 3.0引入了加载器, 支持在Activity和Fragment中异步加载数据
 
 ![image](./Doc/pic/Loader.png)
 
+
+## 使用
+一般使用 API 提供给我们的 CursorLoader (继承自 AsyncTaskLoad) 或者自定义扩展 AsyncTaskLoad  类来异步加载数据，具体使用见工程代码。
+
+## 源码解析
+未完待续......
